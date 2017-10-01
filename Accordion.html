@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body,h3{
+            padding:0;
+            margin:0;
+        }
+        .box{
+            width: 400px;
+            margin:0 auto;
+        }
+        .list{
+            width: 100%;
+        }
+        .list h3{
+            background-color: #5CADFF;
+            height: 40px;
+            line-height: 40px;
+            border-bottom:2px solid forestgreen;
+        }
+        .pictxt{
+            height: 0;
+            transition: all 0.5s ease;
+            background-color: hotpink;
+        }
+        .list:hover .pictxt{
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="list">
+        <h3>今日新闻</h3>
+        <div class="pictxt"></div>
+    </div>
+    <div class="list">
+        <h3>今日新闻</h3>
+        <div class="pictxt"></div>
+    </div>
+    <div class="list">
+        <h3>今日新闻</h3>
+        <div class="pictxt"></div>
+    </div>
+    <div class="list">
+        <h3>今日新闻</h3>
+        <div class="pictxt"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: all 1s ease;
+            transform-origin:0 0;
+            /*用来改变旋转原点的
+             1.可以是具体的数字；
+             2.可以是百分比，
+             3.可以是关键字
+         */
+        }
+        body:hover div:nth-child(1){
+            transform: rotate(30deg);
+        }
+        body:hover div:nth-child(2){
+            transform: rotate(60deg);
+        }
+        body:hover div:nth-child(3){
+            transform: rotate(90deg);
+        }
+        body:hover div:nth-child(4){
+            transform: rotate(120deg);
+        }
+        body:hover div:nth-child(5){
+            transform: rotate(150deg);
+        }
+        body:hover div:nth-child(6){
+            transform: rotate(180deg);
+        }
+        body:hover div:nth-child(7){
+            transform: rotate(210deg);
+        }
+        body:hover div:nth-child(8){
+            transform: rotate(240deg);
+        }
+        body:hover div:nth-child(9){
+            transform: rotate(270deg);
+        }
+        body:hover div:nth-child(10){
+            transform: rotate(300deg);
+        }
+        body:hover div:nth-child(11){
+            transform: rotate(330deg);
+        }
+        body:hover div:nth-child(12){
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+</body>
+</html>

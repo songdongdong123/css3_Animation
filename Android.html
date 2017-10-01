@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #aaaaaa;
+        }
+        .containt{
+            position: relative;
+            margin: 0 auto;
+            width: 500px;
+            height: 500px;
+            background: #FFFFFF;
+            margin-top: 100px;
+        }
+        .android{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .header{
+            width: 220px;
+            height: 100px;
+            background: #A4CA39;
+            position: relative;
+            margin-top: 20px;
+            margin: 0 auto 10px;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+        .header::before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: #FFFFFF;
+            border-radius: 50%;
+            top: 50px;
+            left: 50px;
+        }
+        .header::after{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: #FFFFFF;
+            border-radius: 50%;
+            top: 50px;
+            right: 50px;
+        }
+        .body{
+            position: relative;
+            width: 220px;
+            height: 170px;
+            background:#A4CA39 ;
+            margin: 0 auto;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .body::before{
+            content: '';
+            display: block;
+            width: 50px;
+            height: 80px;
+            position: absolute;
+            background: #A4CA39;
+            bottom: -80px;
+            left: 40px;
+            border-bottom-left-radius: 26px;
+            border-bottom-right-radius: 26px;
+        }
+        .body::after{
+            content: '';
+            display: block;
+            width: 50px;
+            height: 80px;
+            position: absolute;
+            background: #A4CA39;
+            bottom: -80px;
+            right: 40px;
+            border-bottom-left-radius: 26px;
+            border-bottom-right-radius: 26px;
+        }
+        .arms{
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            top: 115px;
+        }
+        .arms::before{
+            position: absolute;
+            content: '';
+            display: block;
+            width: 45px;
+            height: 150px;
+            background: #A4CA39;
+            top: 0;
+            left: 40px;
+            border-radius: 26px;
+        }
+        .arms::after{
+            position: absolute;
+            content: '';
+            display: block;
+            width: 45px;
+            height: 150px;
+            background: #A4CA39;
+            top: 0;
+            right: 40px;
+            border-radius: 26px;
+        }
+    </style>
+</head>
+<body>
+<div class="containt">
+    <div class="android">
+        <div class="header"></div>
+        <div class="body"></div>
+        <div class="arms"></div>
+    </div>
+</div>
+</body>
+</html>

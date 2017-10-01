@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffa5a5;
+            background: linear-gradient(to bottom, #ffa5a5 0%,#ffd3d3 100%);
+        }
+
+        .body{
+            width: 550px;
+            height: 550px;
+            /*background-color: red;*/
+            margin:0px auto;
+            position: relative;
+            /*overflow: hidden;*/
+            margin-top: 80px;
+            /*margin-left: ;*/
+            /*margin:;*/
+        }
+        .left{
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            background: linear-gradient(-90deg, #F50A45 0%, #d5093c 40%);
+            border-radius: 50%;
+            left:27px;
+            z-index: 5;
+            box-shadow: -7px -8px 19px  #F50A45;
+            animation: scale 1s linear infinite;
+        }
+        .right{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            background: linear-gradient(-90deg, #F50A45 0%, #d5093c 40%);
+            right: 27px;
+            border-radius: 50%;
+            box-shadow: 4px -7px 22px #F50A45;
+            animation: scale 1s linear infinite;
+            /*z-index: 5;*/
+        }
+        .center{
+            width: 340px;
+            height: 330px;
+            background: linear-gradient(45deg, #B8073F 0%, #d5093f 00%);
+            position: absolute;
+            left:50%;
+            top:42px;
+            margin-left: -173px;
+            transform: rotate(45deg);
+            border-bottom-right-radius: 250px;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            box-shadow: 1px 1px 5px #F50A45;
+            animation: scale 1s linear infinite;
+        }
+        @keyframes scale {
+            0% {
+                transform: scale(1) rotate(225deg);
+                box-shadow:0 0 40px #d5093c;
+            }
+
+            50% {
+                transform: scale(1.1) rotate(225deg);
+                box-shadow:0 0 70px #d5093c;
+            }
+
+            100% {
+                transform: scale(1) rotate(225deg);
+                box-shadow:0 0 40px #d5093c;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="center"></div>
+    </div>
+</body>
+</html>

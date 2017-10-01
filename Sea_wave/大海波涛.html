@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background-color: #0EA9B1;
+        }
+        section{
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .bg1{
+            position: absolute;
+            bottom:0;
+            width: 100%;
+            height: 211px;
+            background-image: url('1.png');
+            animation: move 1s linear infinite;
+            overflow: hidden;
+        }
+        .bg2{
+            position: absolute;
+            left:0;
+            bottom:0;
+            width: 100%;
+            height: 235px;
+            background-image: url('2.png');
+            animation: move 1s linear infinite;
+        }
+        .sun{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            top:100px;
+            left: 100px;
+        }
+        .sun::before, .sun::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #FFF;
+            border-radius: 25px;
+        }
+        .sun::before{
+            animation: change 1s linear infinite;
+        }
+        .sun::after{
+            animation: change 1s 0.5s linear infinite;
+        }
+        @keyframes change {
+            0%{
+
+            }
+            100%{
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+        @keyframes move {
+            0%{
+                bottom: 0px;
+            }
+            50%{
+                bottom: -40px;
+            }
+            100%{
+                /*bottom: 0;*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="sun"></div>
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+    </section>
+</body>
+</html>
